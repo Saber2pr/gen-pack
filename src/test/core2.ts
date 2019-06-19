@@ -1,3 +1,4 @@
 import { add } from './core'
+import { test } from 'test'
 
-console.log(add(1, 2))
+console.log(test(add(1, 2)))
