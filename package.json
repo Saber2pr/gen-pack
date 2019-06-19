@@ -1,10 +1,10 @@
 {
-  "name": "@saber2pr/pack",
+  "name": "@saber2pr/gen-pack",
   "version": "0.0.1",
-  "description": "__",
+  "description": "> generate a bundle from an entry(js-file).",
   "repository": {
     "type": "git",
-    "url": "git+___"
+    "url": "git+https://github.com/Saber2pr/gen-pack.git"
   },
   "author": "saber2pr",
   "license": "ISC",
@@ -13,8 +13,11 @@
     "lib/index.*"
   ],
   "bin": {
-    "pack": "./lib/index.js"
+    "genPack": "./lib/index.js"
   },
+  "keywords": [
+    "bundler"
+  ],
   "scripts": {
     "test": "./lib/index.js ./lib/test/core2.js",
     "start": "tsc --watch"

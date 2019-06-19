@@ -1,13 +1,21 @@
-# @saber2pr/pack
+# @saber2pr/gen-pack
 
-> __
+> generate a bundle from an entry(js-file).
 
 ```bash
 # from npm
-npm install @saber2pr/pack
+npm install @saber2pr/gen-pack
 
 # from github
-git clone ___
+git clone https://github.com/Saber2pr/gen-pack.git
+```
+
+# Usage
+
+```bash
+genPack ./src/index.js
+
+genPack ./src/index.js ./dist/bundle.js
 ```
 
 ---
@@ -15,47 +23,14 @@ git clone ___
 ## start
 
 ```bash
-# install the typescript and webpack
 npm install
 ```
 
 ```bash
-# auto compile to commonjs
 npm start
 
-# auto compile to es5
-npm run dev
+npm test
 
 ```
 
 > Author: saber2pr
-
----
-
-## develope and test
-
-> you should write ts in /src
-
-> ts -(tsc)-> commonjs -(webpack)-> es5
-
-> you should make test in /src/test
-
-> export your core in /src/index.ts!
-
----
-
-## publish
-
-> Before publish, there are some items in package.json should to be updated below:
-
-1. name
-2. version
-3. description
-4. repository(url)
-5. author
-
-```bash
-# if all is well, try:
-npm publish
-```
-
